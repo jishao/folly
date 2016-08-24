@@ -30,3 +30,6 @@ folly/FormatTables.cpp
 folly/EscapeTables.cpp
 folly/GroupVarintTables.cpp
 folly/FingerprintTables.cpp
+folly/libfolly.pc
+folly/.kdev4
+folly/folly.kdev4
