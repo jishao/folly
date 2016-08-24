@@ -64,7 +64,7 @@ TEST(Expected, NoDefault) {
   static_assert(
       std::is_default_constructible<Expected<NoDefault, int>>::value, "");
   Expected<NoDefault, int> x{in_place, 42, 42};
-  EXPECT_TRUE(x);
+  EXPECT_TRUE(bool(x));
   x.emplace(4, 5);
   EXPECT_TRUE(bool(x));
   x = makeUnexpected(42);
